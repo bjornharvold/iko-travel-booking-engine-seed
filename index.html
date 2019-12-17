@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <!-- This is the iko.travel Javascript file that contains all our code -->
+    <link rel="stylesheet" href="https://book.iko.travel/styles.css"></link>
+	<title>iko.travel booking engine example setup</title>
+  </head>
+  <body>
+    
+	<section>
+		<!-- This is the book now button. Embed the button as many times as you like on your site. -->
+        <book-now-button></book-now-button>
+    </section>
+	
+	<section>
+		<!-- This is the itinerary picker. Most people embed this element in the middle of their home page. -->
+        <itinerary-picker></itinerary-picker>
+    </section>
+	
+	<section>
+		<!-- This is the social login button. Most people embed it in the top right corner of the page. -->
+		<!-- Note: You need to have setup up a facebook app and / or a google oauth account in yor booking engine to make this button display -->
+	    <social-login-button></social-login-button>
+	</section>
+	
+	<!-- This is the dynamic room price button. Embed the button close to the picture of the room you wish to display a price for. -->
+	<!-- Note: You will usually have one room price button per room type -->
+    <room-price-button room-id="<ENTER YOUR GUEST ROOM ID HERE>"></room-price-button>
+
+    <!-- Import the below Javascript files above our booking engine widget -->
+    <script src="https://book.iko.travel/runtime-es2015.js" type="module"></script>
+    <script src="https://book.iko.travel/polyfills-es2015.js" type="module"></script>
+    <script src="https://book.iko.travel/main-es2015.js" type="module"></script>
+    <script src="https://book.iko.travel/runtime-es5.js" nomodule defer></script>
+    <script src="https://book.iko.travel/polyfills-es5.js" nomodule defer></script>
+    <script src="https://book.iko.travel/main-es5.js" nomodule defer></script>
+    <script src="https://book.iko.travel/scripts.js"></script>
+
+    <!-- This is the trip builder that contains all the logic. Embed this one time at the bottom of your page -->
+    <booking-engine client-id="<ENTER YOUR CLIENT ID HERE>"></booking-engine>
+  </body>
+</html>
