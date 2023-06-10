@@ -1,4 +1,4 @@
-# wink-booking-engine-seed
+# Wink Web Components Examples
 Short examples on how to embed the Wink's booking engine into your website.
 
 ## Requirements
