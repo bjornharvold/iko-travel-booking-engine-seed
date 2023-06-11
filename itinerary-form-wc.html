@@ -1,0 +1,68 @@
+<!--
+  ~ Copyright (c) wink.travel 2023
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wink - Web Components library</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
+    />
+
+    <meta name="robots" content="no-follow" />
+    <meta
+      name="description"
+      content="Wink's Web Component library"
+    />
+    <meta
+      name="copyright"
+      content="All Rights Reserved - Wink"
+    />
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_57/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_60/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_72/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_76/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_114/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_120/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_144/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_152/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_180/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_192/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_32/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_96/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_16/v1653293223/wink/icon_text_white_purple_bg.png">
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/traveliko/image/upload/c_scale,w_16/v1653293223/wink/icon_text_white_purple_bg.ico">
+
+    <!-- social -->
+    <meta property="og:image" content="https://res.cloudinary.com/traveliko/image/upload/v1653294291/wink/logo_text_white_purple_bg_social_card.png"/>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@wink2travel" />
+    <meta property="og:url" content="https://wink.travel" />
+    <meta property="og:title" content="wink.travel | Book" />
+    <meta
+      property="og:description"
+      content="Wink's Web Component library"
+    />
+	
+	<link rel="stylesheet" href="https://elements.wink.travel/styles.css">
+  </head>
+  <body>
+
+    <!-- The itinerary button shows the current itinerary within the button brings up the itinerary form when clicked -->
+    <div style="width: 100px">
+      <wink-itinerary-button></wink-itinerary-button>
+    </div>
+  
+    <wink-app-loader
+      config='{"clientId": "PASTE YOUR CLIENT ID HERE"}'
+    ></wink-app-loader>
+	
+	  <script src="https://elements.wink.travel/elements.js" type="module"></script>
+  </body>
+</html>
