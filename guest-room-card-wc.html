@@ -64,11 +64,14 @@
       6. Copy the ID and replace it with the placeholder text below
     -->
     <div style="width: 325px;">
-      <wink-content-loader config='{"layout": "GUEST_ROOM", "id": "PASTE YOUR SAVED INVENTORY ID HERE"}'></wink-content-loader>
+      <wink-content-loader layout="GUEST_ROOM" id="PASTE YOUR SAVED INVENTORY ID HERE"></wink-content-loader>
     </div>
 
+    <!-- A client ID can be found by going to https://sell.wink.travel/user-settings/application/list -->
+    <!-- A configuration ID can be found by going to your affiliate and select Customizations from the Account navbar -->
     <wink-app-loader
-      config='{"clientId": "PASTE YOUR CLIENT ID HERE"}'
+      client-id="PASTE YOUR CLIENT ID HERE"
+      configuration-id="OPTIONAL CONFIGURATION ID"
     ></wink-app-loader>
 	
   	<script src="https://elements.wink.travel/elements.js" defer></script>

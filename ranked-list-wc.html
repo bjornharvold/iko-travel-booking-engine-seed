@@ -86,11 +86,14 @@
       3. Place the lookup web component somewhere close to your grid to let users search for the destination.
     -->
     <div style="width: 100%">
-      <wink-content-loader config='{"layout": "RANKED", "sort": "MEMBER"}'></wink-content-loader>
+      <wink-content-loader layout="RANKED" sort="MEMBER"></wink-content-loader>
     </div>
 
+    <!-- A client ID can be found by going to https://sell.wink.travel/user-settings/application/list -->
+    <!-- A configuration ID can be found by going to your affiliate and select Customizations from the Account navbar -->
     <wink-app-loader
-      config='{"clientId": "PASTE YOUR CLIENT ID HERE"}'
+      client-id="PASTE YOUR CLIENT ID HERE"
+      configuration-id="OPTIONAL CONFIGURATION ID"
     ></wink-app-loader>
 	
 	<script src="https://elements.wink.travel/elements.js" defer></script>
